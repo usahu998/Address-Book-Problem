@@ -7,5 +7,19 @@ import org.junit.Test;
 import java.io.IOException;
 
 public class AddressBookTest {
+    @Test
+    public void givenPersonDetail_WhenProper_ShouldReturnTrue() throws IOException {
+        Person person = new Person("Upendra", "Sahu", "malad", "korba", "chhattsigarh", 496683L, 9874563210L);
+        PersonServicesInf personServicesInf = new PersonaServiceImp();
+        personServicesInf.addPerson(person);
+        Assert.assertEquals(person.getFirstName(), personServicesInf.addPerson(person).getFirstName());
+    }
 
+    @Test
+    public void givenPersonDetail_WhenProper_ShouldReturnFalse() throws IOException {
+        Person person = new Person("Upendra", "Sahu", "malad", "korba", "chhattsigarh", 496683L, 9874563210L);
+        PersonServicesInf personServicesInf = new PersonaServiceImp();
+        personServicesInf.addPerson(person);
+        Assert.assertNotEquals(person.getCity(), personServicesInf.addPerson(person).getFirstName());
+    }
 }
