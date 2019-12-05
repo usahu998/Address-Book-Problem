@@ -2,12 +2,16 @@ package com.bridgelabz.addressbookproblem.model;
 
 public class Person {
     private String firstName;
-    private String lastname;
+    private String lastName;
     private String address;
     private String city;
     private String state;
     private Long zip;
     private Long phoneNumber;
+
+    public Person() {
+
+    }
 
     public String getFirstName() {
         return firstName;
@@ -17,12 +21,12 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getAddress() {
@@ -65,9 +69,9 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
-    public Person(String firstName, String lastname, String address, String city, String state, Long zip, Long phoneNumber) {
+    public Person(String firstName, String lastName, String address, String city, String state, Long zip, Long phoneNumber) {
         this.firstName = firstName;
-        this.lastname = lastname;
+        this.lastName = lastName;
         this.address = address;
         this.city = city;
         this.state = state;
@@ -79,7 +83,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
-                ", lastname='" + lastname + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
