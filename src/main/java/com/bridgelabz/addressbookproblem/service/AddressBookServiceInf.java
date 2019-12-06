@@ -4,7 +4,7 @@ import org.graalvm.compiler.core.common.type.ArithmeticOpTable;
 
 import java.io.IOException;
 
-public interface AddressBookInf {
+public interface AddressBookServiceInf {
     public void createNewAddressBook();
     public void openExistingAddressBook();
     public void saveAddressBook();

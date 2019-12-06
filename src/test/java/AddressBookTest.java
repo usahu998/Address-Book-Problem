@@ -11,7 +11,7 @@ public class AddressBookTest {
     public void givenPersonDetail_WhenProper_ShouldReturnTrue() throws IOException {
         Person person = new Person("horro", "B", "", "Nanded", "chhattsigarh", 496683L, 9534543534L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.addPerson(person);
+        boolean result = personServicesInf.addPerson(person);
         Assert.assertEquals(true, result);
     }
 
@@ -19,7 +19,7 @@ public class AddressBookTest {
     public void givenPersonDetail_WhenProper_ShouldReturnFalse() throws IOException {
         Person person = new Person("Upendra", "Sahu", "malad", "korba", "chhattsigarh", 496683L, 9874563210L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.addPerson(person);
+        boolean result = personServicesInf.addPerson(person);
         Assert.assertEquals(true, result);
     }
 
@@ -27,35 +27,35 @@ public class AddressBookTest {
     public void givenPersonDetail_WhenProperEditing_ShouldReturnTrue() throws IOException {
         Person person = new Person("ajju", "df", "malad", "korba1", "chhattsigarh", 496683L, 9874563210L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.editInfo(person,person.getFirstName());
+        boolean result = personServicesInf.editInfo(person, person.getFirstName());
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenPersonDetail_WhenProperDelete_ShouldReturnTrue() throws IOException {
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.deletePerson("Anshu");
+        boolean result = personServicesInf.deletePerson("Anshu");
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenPersonDetail_WhenProperSortByName_ShouldReturnTrue() throws IOException {
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.sortByName();
+        boolean result = personServicesInf.sortByName();
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenPersonDetail_WhenProperSortByZip_ShouldReturnTrue() throws IOException {
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.sortByZipCode();
+        boolean result = personServicesInf.sortByZipCode();
         Assert.assertEquals(true, result);
     }
 
     @Test
     public void givenPersonDetail_WhenProperPrintEntries_ShouldReturnTrue() throws IOException {
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        boolean result=personServicesInf.printEntries();
+        boolean result = personServicesInf.printEntries();
         Assert.assertEquals(true, result);
     }
 }
