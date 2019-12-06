@@ -84,4 +84,11 @@ public class AddressBookTest {
         boolean result = addressBookServiceInf.saveAddressBook();
         Assert.assertEquals(true, result);
     }
+
+    @Test
+    public void givenAddressBook_WhenProperSaveAddressBookAs_ShouldReturnTrue() throws IOException {
+        AddressBookServiceInf addressBookServiceInf=new AddressBookServiceImp();
+        boolean result = addressBookServiceInf.saveAddressBookAs("newFiles");
+        Assert.assertEquals(true, result);
+    }
 }

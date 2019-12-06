@@ -8,7 +8,7 @@ public interface AddressBookServiceInf {
     public boolean createNewAddressBook(String files);
     public boolean openExistingAddressBook(String addressBookName) throws IOException;
     public boolean saveAddressBook() throws IOException;
-    public void saveAddressBookAs();
+    public boolean saveAddressBookAs(String addressBookName);
     public void quitProgram();
 
 }

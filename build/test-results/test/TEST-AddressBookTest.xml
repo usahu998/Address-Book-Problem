@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T12:58:47" hostname="admin265-H110M-H" time="0.179">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T13:17:30" hostname="admin265-H110M-H" time="0.19">
   <properties/>
-  <testcase name="givenAddressBook_WhenProperSaveAddressBook_ShouldReturnTrue" classname="AddressBookTest" time="0.179"/>
+  <testcase name="givenAddressBook_WhenProperSaveAddressBookAs_ShouldReturnTrue" classname="AddressBookTest" time="0.19"/>
   <system-out><![CDATA[written to json
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

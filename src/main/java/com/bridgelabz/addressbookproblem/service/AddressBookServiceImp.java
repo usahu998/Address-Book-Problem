@@ -56,9 +56,20 @@ public class AddressBookServiceImp implements AddressBookServiceInf {
     }
 
     @Override
-    public void saveAddressBookAs() {
-
+    public boolean saveAddressBookAs(String addressBookName) {
+        try {
+            PersonServicesInf personServicesInf = new PersonaServiceImp();
+            ArrayList<Person> personInformation = personServicesInf.fileRead();
+            AddressBookServiceImp addressBookServiceImp = new AddressBookServiceImp();
+            addressBookServiceImp.openExistingAddressBook(addressBookName);
+            personServicesInf.writeIntoJson(personInformation);
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
+
 
     @Override
     public void quitProgram() {
