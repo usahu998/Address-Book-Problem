@@ -7,11 +7,11 @@ import java.util.ArrayList;
 
 public interface PersonServicesInf {
     public boolean addPerson(Person person) throws IOException;
-    public String editInfo(Person person) throws IOException;
+    public boolean editInfo(Person person,String firstName) throws IOException;
     public Boolean deletePerson(String firstName) throws IOException;
     public void sortByLastName(Person person);
     public void sortByZipCode(Person person);
-    public void writeIntoJson();
+    public void writeIntoJson(ArrayList<Person> list);
     public void printEntries();
     public ArrayList<Person> fileRead() throws IOException;
 }

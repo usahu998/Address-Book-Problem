@@ -21,7 +21,7 @@ public class PersonaServiceImp implements PersonServicesInf {
         try {
             personInformation = fileRead();
             personInformation.add(personData);
-            writeIntoJson();
+            writeIntoJson(personInformation);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -30,28 +30,31 @@ public class PersonaServiceImp implements PersonServicesInf {
     }
 
     @Override
-    public String editInfo(Person person) throws IOException {
-        List<Person> personInformation = fileRead();
-        for (int i = 0; i < personInformation.size(); i++) {
-            if (personInformation.get(i).getFirstName().equals(person.getFirstName())) {
-                personInformation.get(i).setLastName(person.getLastName());
-                personInformation.get(i).setAddress(person.getAddress());
-                personInformation.get(i).setCity(person.getCity());
-                personInformation.get(i).setState(person.getState());
-                personInformation.get(i).setZip(person.getZip());
-                personInformation.get(i).setPhoneNumber(person.getPhoneNumber());
+    public boolean editInfo(Person person, String firstName) throws IOException {
+        ArrayList<Person> personInformation = fileRead();
+
+        for (Person personInfo : personInformation) {
+            if (personInfo.getFirstName().equals(firstName)) {
+
+                personInfo.setLastName(person.getLastName());
+                personInfo.setAddress(person.getAddress());
+                personInfo.setCity(person.getCity());
+                personInfo.setState(person.getState());
+                personInfo.setZip(person.getZip());
+                personInfo.setPhoneNumber(person.getPhoneNumber());
+
             }
         }
-        writeIntoJson();
-        return "Edit Successfully";
+        writeIntoJson(personInformation);
+        return true;
     }
 
     @Override
     public Boolean deletePerson(String firstName) throws IOException {
-      //  List<Person> personInformation = fileRead();
-       // for (Person personInfo:personInformation)
+        //  List<Person> personInformation = fileRead();
+        // for (Person personInfo:personInformation)
         personInformation.removeIf(addressBook1 -> addressBook1.getFirstName().equals(firstName));
-        writeIntoJson();
+        writeIntoJson(personInformation);
         return true;
     }
 
@@ -66,9 +69,9 @@ public class PersonaServiceImp implements PersonServicesInf {
     }
 
     @Override
-    public void writeIntoJson() {
+    public void writeIntoJson(ArrayList<Person> list) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String json = gson.toJson(personInformation);
+        String json = gson.toJson(list);
         try (FileWriter file = new FileWriter(filepath)) {
             file.write(json);
             System.out.println("written to json");

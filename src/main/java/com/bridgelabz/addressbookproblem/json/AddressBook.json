@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "firstName": "ajju",
+    "lastName": "df",
+    "address": "malad",
+    "city": "korba1",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9874563210
+  },
+  {
+    "firstName": "Anshu",
+    "lastName": "B",
+    "address": "",
+    "city": "Nanded",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9534543534
+  }
+]

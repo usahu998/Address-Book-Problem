@@ -9,7 +9,7 @@ import java.io.IOException;
 public class AddressBookTest {
     @Test
     public void givenPersonDetail_WhenProper_ShouldReturnTrue() throws IOException {
-        Person person = new Person("ajju", "B", "", "Nanded", "chhattsigarh", 496683L, 9534543534L);
+        Person person = new Person("Anshu", "B", "", "Nanded", "chhattsigarh", 496683L, 9534543534L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
         boolean result=personServicesInf.addPerson(person);
         Assert.assertEquals(true, result);
@@ -25,10 +25,10 @@ public class AddressBookTest {
 
     @Test
     public void givenPersonDetail_WhenProperEditing_ShouldReturnTrue() throws IOException {
-        Person person = new Person("ajju", "dfdsf", "malad", "korba1", "chhattsigarh", 496683L, 9874563210L);
+        Person person = new Person("ajju", "df", "malad", "korba1", "chhattsigarh", 496683L, 9874563210L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        personServicesInf.editInfo(person);
-      //  Assert.assertEquals(person.getFirstName(), personServicesInf.addPerson(person).getFirstName());
+        boolean result=personServicesInf.editInfo(person,person.getFirstName());
+        Assert.assertEquals(true, result);
     }
 
     @Test

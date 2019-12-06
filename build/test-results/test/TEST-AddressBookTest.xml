@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T06:00:34" hostname="admin265-H110M-H" time="0.18">
+  <properties/>
+  <testcase name="givenPersonDetail_WhenProper_ShouldReturnTrue" classname="AddressBookTest" time="0.18"/>
+  <system-out><![CDATA[written to json
+Add person detail:[
+  {
+    "firstName": "ajju",
+    "lastName": "df",
+    "address": "malad",
+    "city": "korba1",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9874563210
+  },
+  {
+    "firstName": "Anshu",
+    "lastName": "B",
+    "address": "",
+    "city": "Nanded",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9534543534
+  }
+]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
