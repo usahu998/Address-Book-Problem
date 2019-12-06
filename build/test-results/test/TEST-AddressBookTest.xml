@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T06:26:35" hostname="admin265-H110M-H" time="0.18">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T07:30:49" hostname="admin265-H110M-H" time="0.185">
   <properties/>
-  <testcase name="givenPersonDetail_WhenProperDelete_ShouldReturnTrue" classname="AddressBookTest" time="0.18"/>
-  <system-out><![CDATA[written to json
-Add person detail:[
-  {
-    "firstName": "ajju",
-    "lastName": "B",
-    "address": "",
-    "city": "Nanded",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9534543534
-  }
-]
+  <testcase name="givenPersonDetail_WhenProperSortByName_ShouldReturnTrue" classname="AddressBookTest" time="0.185"/>
+  <system-out><![CDATA[Person{firstName='Ajju', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+written to json
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

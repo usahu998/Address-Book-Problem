@@ -1,6 +1,24 @@
 [
   {
-    "firstName": "ajju",
+    "firstName": "Ajju",
+    "lastName": "B",
+    "address": "",
+    "city": "Nanded",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9534543534
+  },
+  {
+    "firstName": "Horro",
+    "lastName": "B",
+    "address": "",
+    "city": "Nanded",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9534543534
+  },
+  {
+    "firstName": "Zorro",
     "lastName": "B",
     "address": "",
     "city": "Nanded",

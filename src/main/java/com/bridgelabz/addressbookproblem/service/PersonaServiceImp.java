@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class PersonaServiceImp implements PersonServicesInf {
@@ -35,7 +37,6 @@ public class PersonaServiceImp implements PersonServicesInf {
 
         for (Person personInfo : personInformation) {
             if (personInfo.getFirstName().equals(firstName)) {
-
                 personInfo.setLastName(person.getLastName());
                 personInfo.setAddress(person.getAddress());
                 personInfo.setCity(person.getCity());
@@ -58,8 +59,12 @@ public class PersonaServiceImp implements PersonServicesInf {
     }
 
     @Override
-    public void sortByLastName(Person person) {
-
+    public boolean sortByName() throws IOException {
+        ArrayList<Person> personInformation = fileRead();
+        personInformation.sort(Comparator.comparing(Person::getFirstName));
+        personInformation.forEach(System.out::println);
+        writeIntoJson(personInformation);
+        return true;
     }
 
     @Override
@@ -77,7 +82,7 @@ public class PersonaServiceImp implements PersonServicesInf {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("Add person detail:" + json);
+//        System.out.println("Add person detail:" + json);
     }
 
     @Override

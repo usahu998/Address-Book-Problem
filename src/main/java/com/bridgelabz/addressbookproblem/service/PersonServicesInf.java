@@ -9,7 +9,7 @@ public interface PersonServicesInf {
     public boolean addPerson(Person person) throws IOException;
     public boolean editInfo(Person person,String firstName) throws IOException;
     public boolean deletePerson(String firstName) throws IOException;
-    public void sortByLastName(Person person);
+    public boolean sortByName() throws IOException;
     public void sortByZipCode(Person person);
     public void writeIntoJson(ArrayList<Person> list);
     public void printEntries();
