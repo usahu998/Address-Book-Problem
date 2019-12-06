@@ -22,4 +22,12 @@ public class AddressBookTest {
         personServicesInf.addPerson(person);
         Assert.assertNotEquals(person.getCity(), personServicesInf.addPerson(person).getFirstName());
     }
+
+    @Test
+    public void givenPersonDetail_WhenProperEditing_ShouldReturnTrue() throws IOException {
+        Person person = new Person("Upendra2", "Sahufdh", "malad1fh", "korba1", "chhattsigarh", 496683L, 9874563210L);
+        PersonServicesInf personServicesInf = new PersonaServiceImp();
+        personServicesInf.editInfo(person);
+        Assert.assertEquals(person.getFirstName(), personServicesInf.addPerson(person).getFirstName());
+    }
 }

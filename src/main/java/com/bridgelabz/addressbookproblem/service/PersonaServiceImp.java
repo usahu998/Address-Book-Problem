@@ -10,24 +10,39 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
-public class PersonaServiceImp implements PersonServicesInf{
-  public static String filepath="/home/admin265/IdeaProjects/AddressBookProblem/src/main/java/com/bridgelabz/addressbookproblem/json/AddressBook.json";
-    ArrayList<Person> addPerson = new ArrayList<>();
+public class PersonaServiceImp implements PersonServicesInf {
+    public static String filepath = "/home/admin265/IdeaProjects/AddressBookProblem/src/main/java/com/bridgelabz/addressbookproblem/json/AddressBook.json";
+    ArrayList<Person> personInformation = new ArrayList<>();
+
     @Override
     public Person addPerson(Person personData) throws IOException {
         try {
-            addPerson = fileRead();
-            addPerson.add(personData);
-            writeJson();
+            personInformation = fileRead();
+            personInformation.add(personData);
+            writeIntoJson();
         } catch (Exception e) {
             e.printStackTrace();
         }
         return personData;
     }
-    @Override
-    public void editInfo(Person person) {
 
+    @Override
+    public String editInfo(Person person) throws IOException {
+        List<Person> personInformation = fileRead();
+        for (int i = 0; i < personInformation.size(); i++) {
+            if (personInformation.get(i).getFirstName().equals(person.getFirstName())) {
+                personInformation.get(i).setLastName(person.getLastName());
+                personInformation.get(i).setAddress(person.getAddress());
+                personInformation.get(i).setCity(person.getCity());
+                personInformation.get(i).setState(person.getState());
+                personInformation.get(i).setZip(person.getZip());
+                personInformation.get(i).setPhoneNumber(person.getPhoneNumber());
+            }
+        }
+        writeIntoJson();
+        return "Edit Successfully";
     }
 
     @Override
@@ -46,9 +61,9 @@ public class PersonaServiceImp implements PersonServicesInf{
     }
 
     @Override
-    public void writeJson() {
+    public void writeIntoJson() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String json = gson.toJson(addPerson);
+        String json = gson.toJson(personInformation);
         try (FileWriter file = new FileWriter(filepath)) {
             file.write(json);
             System.out.println("written to json");
@@ -65,8 +80,9 @@ public class PersonaServiceImp implements PersonServicesInf{
 
     @Override
     public ArrayList<Person> fileRead() throws IOException {
-       ObjectMapper objectMapper=new ObjectMapper();
-       ArrayList<Person> personList = objectMapper.readValue(new File(filepath), new TypeReference<ArrayList<Person>>() {});
-       return personList;
+        ObjectMapper objectMapper = new ObjectMapper();
+        ArrayList<Person> personList = objectMapper.readValue(new File(filepath), new TypeReference<ArrayList<Person>>() {
+        });
+        return personList;
     }
 }

@@ -1,283 +1,12 @@
 written to json
-Add person detail:[
-  {
-    "firstName": "Upendraag",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendraag",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  }
-]
+Add person detail:[]
 written to json
 Add person detail:[
   {
-    "firstName": "Upendraag",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendraag",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
-    "state": "chhattsigarh",
-    "zip": 496683,
-    "phoneNumber": 9874563210
-  },
-  {
-    "firstName": "Upendra",
-    "lastName": "Sahu",
-    "address": "malad",
-    "city": "korba",
+    "firstName": "Upendra2",
+    "lastName": "Sahufdh",
+    "address": "malad1fh",
+    "city": "korba1",
     "state": "chhattsigarh",
     "zip": 496683,
     "phoneNumber": 9874563210
