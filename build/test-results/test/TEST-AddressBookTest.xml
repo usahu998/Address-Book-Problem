@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T10:11:55" hostname="admin265-H110M-H" time="0.161">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T10:59:46" hostname="admin265-H110M-H" time="0.003">
   <properties/>
-  <testcase name="givenPersonDetail_WhenProperPrintEntries_ShouldReturnTrue" classname="AddressBookTest" time="0.161"/>
-  <system-out><![CDATA[First Name:- Ajju Last Name:- B
-Address:- 
-City:- Nanded State:- chhattsigarh
-Zip code:- 496683
-
-First Name:- Horro Last Name:- B
-Address:- 
-City:- Nanded State:- chhattsigarh
-Zip code:- 996683
-
-First Name:- Upendra Last Name:- Sahu
-Address:- malad
-City:- korba State:- chhattsigarh
-Zip code:- 496683
-
-First Name:- Zorro Last Name:- B
-Address:- 
-City:- Nanded State:- chhattsigarh
-Zip code:- 196683
-
-First Name:- horro Last Name:- B
-Address:- 
-City:- Nanded State:- chhattsigarh
-Zip code:- 496683
-
+  <testcase name="givenAddressBook_WhenProperFileCreate_ShouldReturnTrue" classname="AddressBookTest" time="0.003"/>
+  <system-out><![CDATA[File already Exist
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

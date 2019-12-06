@@ -1,4 +1,6 @@
 import com.bridgelabz.addressbookproblem.model.Person;
+import com.bridgelabz.addressbookproblem.service.AddressBookServiceImp;
+import com.bridgelabz.addressbookproblem.service.AddressBookServiceInf;
 import com.bridgelabz.addressbookproblem.service.PersonServicesInf;
 import com.bridgelabz.addressbookproblem.service.PersonaServiceImp;
 import org.junit.Assert;
@@ -56,6 +58,13 @@ public class AddressBookTest {
     public void givenPersonDetail_WhenProperPrintEntries_ShouldReturnTrue() throws IOException {
         PersonServicesInf personServicesInf = new PersonaServiceImp();
         boolean result = personServicesInf.printEntries();
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenAddressBook_WhenProperFileCreate_ShouldReturnTrue() throws IOException {
+        AddressBookServiceInf addressBookServiceInf=new AddressBookServiceImp();
+        boolean result = addressBookServiceInf.createNewAddressBook("newFile");
         Assert.assertEquals(true, result);
     }
 }
