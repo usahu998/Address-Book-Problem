@@ -17,15 +17,16 @@ public class PersonaServiceImp implements PersonServicesInf {
     ArrayList<Person> personInformation = new ArrayList<>();
 
     @Override
-    public Person addPerson(Person personData) throws IOException {
+    public boolean addPerson(Person personData) throws IOException {
         try {
             personInformation = fileRead();
             personInformation.add(personData);
             writeIntoJson();
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return personData;
+        return false;
     }
 
     @Override
@@ -46,8 +47,12 @@ public class PersonaServiceImp implements PersonServicesInf {
     }
 
     @Override
-    public void deletePerson(Person person) {
-
+    public Boolean deletePerson(String firstName) throws IOException {
+      //  List<Person> personInformation = fileRead();
+       // for (Person personInfo:personInformation)
+        personInformation.removeIf(addressBook1 -> addressBook1.getFirstName().equals(firstName));
+        writeIntoJson();
+        return true;
     }
 
     @Override
