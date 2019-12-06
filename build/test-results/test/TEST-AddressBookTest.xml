@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T07:30:49" hostname="admin265-H110M-H" time="0.185">
+<testsuite name="AddressBookTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-12-06T08:56:18" hostname="admin265-H110M-H" time="0.358">
   <properties/>
-  <testcase name="givenPersonDetail_WhenProperSortByName_ShouldReturnTrue" classname="AddressBookTest" time="0.185"/>
-  <system-out><![CDATA[Person{firstName='Ajju', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
-Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
-Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+  <testcase name="givenPersonDetail_WhenProperSortByZip_ShouldReturnTrue" classname="AddressBookTest" time="0.188"/>
+  <testcase name="givenPersonDetail_WhenProper_ShouldReturnFalse" classname="AddressBookTest" time="0.005"/>
+  <testcase name="givenPersonDetail_WhenProperSortByName_ShouldReturnTrue" classname="AddressBookTest" time="0.003"/>
+  <testcase name="givenPersonDetail_WhenProper_ShouldReturnTrue" classname="AddressBookTest" time="0.12"/>
+  <testcase name="givenPersonDetail_WhenProperDelete_ShouldReturnTrue" classname="AddressBookTest" time="0.03"/>
+  <testcase name="givenPersonDetail_WhenProperEditing_ShouldReturnTrue" classname="AddressBookTest" time="0.009"/>
+  <system-out><![CDATA[Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=196683, phoneNumber=9534543534}
+Person{firstName='Ajju', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=996683, phoneNumber=9534543534}
+written to json
+written to json
+Person{firstName='Ajju', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=996683, phoneNumber=9534543534}
+Person{firstName='Upendra', lastName='Sahu', address='malad', city='korba', state='chhattsigarh', zip=496683, phoneNumber=9874563210}
+Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=196683, phoneNumber=9534543534}
+written to json
+written to json
+written to json
 written to json
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

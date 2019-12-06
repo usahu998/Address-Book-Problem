@@ -1,4 +1,13 @@
+}Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=196683, phoneNumber=9534543534}
 |Person{firstName='Ajju', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
-}Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
-}Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+}Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=996683, phoneNumber=9534543534}
 written to json
+written to json
+|Person{firstName='Ajju', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=496683, phoneNumber=9534543534}
+}Person{firstName='Horro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=996683, phoneNumber=9534543534}
+†Person{firstName='Upendra', lastName='Sahu', address='malad', city='korba', state='chhattsigarh', zip=496683, phoneNumber=9874563210}
+}Person{firstName='Zorro', lastName='B', address='', city='Nanded', state='chhattsigarh', zip=196683, phoneNumber=9534543534}
+written to json
+written to json
+written to json
+written to json

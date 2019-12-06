@@ -14,11 +14,29 @@
     "address": "",
     "city": "Nanded",
     "state": "chhattsigarh",
-    "zip": 496683,
+    "zip": 996683,
     "phoneNumber": 9534543534
   },
   {
+    "firstName": "Upendra",
+    "lastName": "Sahu",
+    "address": "malad",
+    "city": "korba",
+    "state": "chhattsigarh",
+    "zip": 496683,
+    "phoneNumber": 9874563210
+  },
+  {
     "firstName": "Zorro",
+    "lastName": "B",
+    "address": "",
+    "city": "Nanded",
+    "state": "chhattsigarh",
+    "zip": 196683,
+    "phoneNumber": 9534543534
+  },
+  {
+    "firstName": "horro",
     "lastName": "B",
     "address": "",
     "city": "Nanded",
