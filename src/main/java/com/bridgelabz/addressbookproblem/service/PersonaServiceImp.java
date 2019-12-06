@@ -90,8 +90,16 @@ public class PersonaServiceImp implements PersonServicesInf {
     }
 
     @Override
-    public void printEntries() {
-
+    public boolean printEntries() throws IOException {
+        ArrayList<Person> personInformation = fileRead();
+        for (Person person : personInformation) {
+            System.out.println("First Name:- "+person.getFirstName()+" Last Name:- "+person.getLastName());
+            System.out.println("Address:- "+person.getAddress());
+            System.out.println("City:- "+person.getCity()+" State:- "+person.getState());
+            System.out.println("Zip code:- "+person.getZip());
+            System.out.println();
+        }
+        return true;
     }
 
     @Override

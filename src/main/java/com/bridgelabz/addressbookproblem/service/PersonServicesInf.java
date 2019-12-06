@@ -12,6 +12,6 @@ public interface PersonServicesInf {
     public boolean sortByName() throws IOException;
     public boolean sortByZipCode() throws IOException;
     public void writeIntoJson(ArrayList<Person> list);
-    public void printEntries();
+    public boolean printEntries() throws IOException;
     public ArrayList<Person> fileRead() throws IOException;
 }

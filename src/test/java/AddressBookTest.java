@@ -51,4 +51,11 @@ public class AddressBookTest {
         boolean result=personServicesInf.sortByZipCode();
         Assert.assertEquals(true, result);
     }
+
+    @Test
+    public void givenPersonDetail_WhenProperPrintEntries_ShouldReturnTrue() throws IOException {
+        PersonServicesInf personServicesInf = new PersonaServiceImp();
+        boolean result=personServicesInf.printEntries();
+        Assert.assertEquals(true, result);
+    }
 }
