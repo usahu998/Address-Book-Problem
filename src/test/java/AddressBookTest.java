@@ -64,7 +64,7 @@ public class AddressBookTest {
     @Test
     public void givenAddressBook_WhenProperFileCreate_ShouldReturnTrue() throws IOException {
         AddressBookServiceInf addressBookServiceInf=new AddressBookServiceImp();
-        boolean result = addressBookServiceInf.createNewAddressBook("newFile");
+        boolean result = addressBookServiceInf.createNewAddressBook("newFiles");
         Assert.assertEquals(true, result);
     }
 }
