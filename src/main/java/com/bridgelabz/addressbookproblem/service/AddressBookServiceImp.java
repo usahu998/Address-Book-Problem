@@ -1,23 +1,19 @@
 package com.bridgelabz.addressbookproblem.service;
 
-import com.bridgelabz.addressbookproblem.controller.AddressBookOpen;
-import com.bridgelabz.addressbookproblem.model.Person;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class AddressBookServiceImp implements AddressBookServiceInf {
-    public static String newDirectoryPath="/home/admin265/IdeaProjects/AddressBookProblem/src/main/java/com/bridgelabz/addressbookproblem/json/";
+    public static String newDirectoryPath = "/home/admin265/IdeaProjects/AddressBookProblem/src/main/java/com/bridgelabz/addressbookproblem/json/";
+
     @Override
     public boolean createNewAddressBook(String files) {
 
-        File file = new File( newDirectoryPath + files + ".json");
+        File file = new File(newDirectoryPath + files + ".json");
         boolean existence = file.exists();
         if (existence) {
             System.out.println("File already Exist");
@@ -34,7 +30,7 @@ public class AddressBookServiceImp implements AddressBookServiceInf {
     @Override
     public boolean openExistingAddressBook(String addressBookName) throws IOException {
         ObjectMapper map = new ObjectMapper();
-        File file = new File(newDirectoryPath + addressBookName + ".json");
+        File file = new File(newDirectoryPath+ addressBookName + ".json");
         FileReader file1 = new FileReader(file);
         BufferedReader br = new BufferedReader(file1);
         boolean existence = file.exists();

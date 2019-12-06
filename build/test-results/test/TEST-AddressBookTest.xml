@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T11:10:35" hostname="admin265-H110M-H" time="0.003">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T12:17:01" hostname="admin265-H110M-H" time="0.116">
   <properties/>
-  <testcase name="givenAddressBook_WhenProperFileCreate_ShouldReturnTrue" classname="AddressBookTest" time="0.003"/>
-  <system-out><![CDATA[File already Exist
-]]></system-out>
+  <testcase name="givenAddressBook_WhenProperFileOpenExistingAddressBook_ShouldReturnTrue" classname="AddressBookTest" time="0.116"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
