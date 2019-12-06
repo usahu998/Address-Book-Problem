@@ -50,10 +50,9 @@ public class PersonaServiceImp implements PersonServicesInf {
     }
 
     @Override
-    public Boolean deletePerson(String firstName) throws IOException {
-        //  List<Person> personInformation = fileRead();
-        // for (Person personInfo:personInformation)
-        personInformation.removeIf(addressBook1 -> addressBook1.getFirstName().equals(firstName));
+    public boolean deletePerson(String firstName) throws IOException {
+        ArrayList<Person> personInformation = fileRead();
+        personInformation.removeIf(personDetail -> personDetail.getFirstName().equals(firstName));
         writeIntoJson(personInformation);
         return true;
     }

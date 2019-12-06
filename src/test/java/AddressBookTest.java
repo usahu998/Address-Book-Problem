@@ -9,7 +9,7 @@ import java.io.IOException;
 public class AddressBookTest {
     @Test
     public void givenPersonDetail_WhenProper_ShouldReturnTrue() throws IOException {
-        Person person = new Person("Anshu", "B", "", "Nanded", "chhattsigarh", 496683L, 9534543534L);
+        Person person = new Person("ajju", "B", "", "Nanded", "chhattsigarh", 496683L, 9534543534L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
         boolean result=personServicesInf.addPerson(person);
         Assert.assertEquals(true, result);
@@ -34,7 +34,7 @@ public class AddressBookTest {
     @Test
     public void givenPersonDetail_WhenProperDelete_ShouldReturnTrue() throws IOException {
         PersonServicesInf personServicesInf = new PersonaServiceImp();
-        personServicesInf.deletePerson("Upendra2");
-        //Assert.assertTrue();
+        boolean result=personServicesInf.deletePerson("Anshu");
+        Assert.assertEquals(true, result);
     }
 }
