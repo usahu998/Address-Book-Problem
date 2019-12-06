@@ -22,7 +22,10 @@ public class AddressBookTest {
         Person person = new Person("Upendra", "Sahu", "malad", "korba", "chhattsigarh", 496683L, 9874563210L);
         PersonServicesInf personServicesInf = new PersonaServiceImp();
         boolean result = personServicesInf.addPerson(person);
-        Assert.assertEquals(true, result);
+        Assert.assertEquals(true
+
+
+                , result);
     }
 
     @Test
@@ -72,6 +75,13 @@ public class AddressBookTest {
     public void givenAddressBook_WhenProperFileOpenExistingAddressBook_ShouldReturnTrue() throws IOException {
         AddressBookServiceInf addressBookServiceInf=new AddressBookServiceImp();
         boolean result = addressBookServiceInf.openExistingAddressBook("newFiles");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenAddressBook_WhenProperSaveAddressBook_ShouldReturnTrue() throws IOException {
+        AddressBookServiceInf addressBookServiceInf=new AddressBookServiceImp();
+        boolean result = addressBookServiceInf.saveAddressBook();
         Assert.assertEquals(true, result);
     }
 }

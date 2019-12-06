@@ -1,11 +1,13 @@
 package com.bridgelabz.addressbookproblem.service;
 
+import com.bridgelabz.addressbookproblem.model.Person;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class AddressBookServiceImp implements AddressBookServiceInf {
     public static String newDirectoryPath = "/home/admin265/IdeaProjects/AddressBookProblem/src/main/java/com/bridgelabz/addressbookproblem/json/";
@@ -41,8 +43,16 @@ public class AddressBookServiceImp implements AddressBookServiceInf {
     }
 
     @Override
-    public void saveAddressBook() {
-
+    public boolean saveAddressBook() throws IOException {
+       try {
+           PersonServicesInf personServicesInf = new PersonaServiceImp();
+           ArrayList<Person> personInformation = personServicesInf.fileRead();
+           personServicesInf.writeIntoJson(personInformation);
+           return true;
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+        return false;
     }
 
     @Override

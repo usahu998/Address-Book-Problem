@@ -7,7 +7,7 @@ import java.io.IOException;
 public interface AddressBookServiceInf {
     public boolean createNewAddressBook(String files);
     public boolean openExistingAddressBook(String addressBookName) throws IOException;
-    public void saveAddressBook();
+    public boolean saveAddressBook() throws IOException;
     public void saveAddressBookAs();
     public void quitProgram();
 
